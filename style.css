@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    font-family: sans-serif;
+    background: rgb(76,32,198);
+    background: linear-gradient(90deg, rgba(76,32,198,1) 73%, rgba(18,2,66,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+.main-div{
+    height: 600px;
+    width: 330px;
+    margin: 30px auto;
+    padding: 10px;
+    position: relative;
+    background: linear-gradient(to rigth,#222,#333);
+    border:5px solid hotpink;
+    border-radius: 30px;
+    animation: scalein 0.5s ease ;
+
+}
+@keyframes scalein{
+    from{
+        transform: scale(0.5);
+        opacity: 0.5;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.screen{
+    height: 100px;
+    width:100%;
+    background: #2c3e50;
+    font-size: 32px;
+    text-align:right;
+    border-radius: 20px;
+    padding: 0 10px;
+    color:white;
+    font-weight: bold;
+    line-height: 100px;
+}
+.clear{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(248, 128, 128);
+    position: absolute;
+    left:0;
+    top:543px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    border-radius: 0 0 25px 25px;
+    transition: background 0.4s ease-in-out;
+}
+.clear:hover{
+    background-color: rgb(219, 87, 109);
+}
+.number-div{
+    padding: 30px 20px;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.number-div li{
+    flex: 22%;
+    width: 20px;
+    height: 65px; 
+    margin: 15px 2px;
+    background-color: #444;
+    border-radius: 50%;
+    line-height: 65px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+    cursor: pointer;
+    color: #fff;
+    transition: border 0.4s ease-in-out;
+
+}
+
+.number-div li:hover{
+    border:2px solid deeppink;
+}
